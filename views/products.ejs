@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Products</h1>
+        <% products.forEach((product, index) => { %>
+            <div class="product">
+                <img src="<%= product.productURL %>" alt="<%= product.productName %>">
+                <div class="product-details">
+                    <h3><%= product.productName %></h3>
+                    <p>Price: $<%= product.price %></p>
+                    <a href="/delete/<%= index %>" class="delete-btn">Delete</a>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

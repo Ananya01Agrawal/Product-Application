@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.product img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.delete-btn {
+    color: #ff0000;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
